@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 4px 24px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  width: clamp(120px, 30vw, 200px);
+}
+
+.section-hero {
+  display: grid;
+  place-content: center;
+  padding: 24px;
+}
+
+.hero {
+  width: clamp(200px, 50vw, 600px);
+  border-radius: 12px;
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.4);
+}
+
+.section-hero > h1 {
+  text-align: center;
+  padding: 6px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: clamp(260px, 16vw, 400px);
+  border-radius: 12px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  margin: 100px 12px 12px 12px;
+}
+
+.card-badge {
+  position: absolute;
+  background-color: white;
+  font-weight: bolder;
+  padding: 4px;
+  opacity: 0.4;
+}
+
+.card-image {
+  width: 100%;
+  height: clamp(100px, auto, 200px);
+  border-radius: 12px 12px 0 0;
+}
+
+.card-description {
+  padding: 8px 24px 24px 24px;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+}
+
+.card-rating > * {
+  margin-right: 4px;
+}
+
+.star {
+  width: clamp(20px, 1.2vw, 30px);
+}
